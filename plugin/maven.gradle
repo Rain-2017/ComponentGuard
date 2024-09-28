@@ -1,0 +1,18 @@
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            from components.java
+            groupId 'com.rain.componentguard'
+            artifactId 'ComponentGuard'
+            version "$plugin_version"
+        }
+    }
+
+    repositories {
+        maven {
+            url '../componentguard'
+        }
+    }
+}

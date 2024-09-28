@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        if ("true" == useMavenLocal) {
+            mavenLocal()
+        }
+        maven {
+            url './componentguard'
+        }
+//        maven { url 'https://gitee.com/wp3355168/ComponentGuard/raw/master' }
+
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url './componentguard'
+        }
+//        maven { url 'https://gitee.com/wp3355168/ComponentGuard/raw/master' }
+
+        jcenter()
+    }
+}
+rootProject.name = "ComponentGuard"
+include ':app'
+include ':plugin'

@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.rain.componentguard",
+    "module": "ComponentGuard",
+    "version": "1.0.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy-xml",
+          "version": {
+            "requires": "3.0.13"
+          }
+        },
+        {
+          "group": "org.sejda.imageio",
+          "module": "webp-imageio",
+          "version": {
+            "requires": "0.1.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ComponentGuard-1.0.0.0.jar",
+          "url": "ComponentGuard-1.0.0.0.jar",
+          "size": 96245,
+          "sha512": "720b116f5d75e8deeb4c907e2b2ab8f4c2e158a2e0917e4c9249052bf6e22383a9f277f3210becb9f3262c37af4187702a4e772f9041f124704757a5afb6e2f9",
+          "sha256": "1d23f67689ebf8ec72657f4c53836392d8211250bb70b79011c24a96af924cd9",
+          "sha1": "0304339fa59380d0d3bd0bb61dee8c53eab56e8a",
+          "md5": "3812cc979b3820481530c7a786b7da15"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy-xml",
+          "version": {
+            "requires": "3.0.13"
+          }
+        },
+        {
+          "group": "org.sejda.imageio",
+          "module": "webp-imageio",
+          "version": {
+            "requires": "0.1.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ComponentGuard-1.0.0.0.jar",
+          "url": "ComponentGuard-1.0.0.0.jar",
+          "size": 96245,
+          "sha512": "720b116f5d75e8deeb4c907e2b2ab8f4c2e158a2e0917e4c9249052bf6e22383a9f277f3210becb9f3262c37af4187702a4e772f9041f124704757a5afb6e2f9",
+          "sha256": "1d23f67689ebf8ec72657f4c53836392d8211250bb70b79011c24a96af924cd9",
+          "sha1": "0304339fa59380d0d3bd0bb61dee8c53eab56e8a",
+          "md5": "3812cc979b3820481530c7a786b7da15"
+        }
+      ]
+    }
+  ]
+}
